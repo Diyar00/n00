@@ -1,0 +1,386 @@
+*{
+  margin:0;
+  
+  padding:0;
+  font-family: proxima_nova_regular, -apple-system, BlinkMacSystem;
+}
+video{
+  
+  width:100%;
+  max-width: 100%;
+}
+img{
+  width:100%;
+  max-width:100%;
+} 
+
+.video-page{
+  position: relative;
+  max-width: 100%;
+}
+.home-page-text{
+  position:absolute;
+  line-height: 2;
+  top:15%;
+  left:10%;
+ 
+  text-align: center;
+}
+.home-h1{
+  color: white;
+  font-size: 5vw;
+  font-weight: 900;
+}
+.home-h2{
+  font-size: 3vw;
+  font-weight: 700;
+  color:white;
+}
+
+.a-home-video{
+  margin-top: 30px;
+  /* -webkit-text-stroke: 4px white; */
+  --color:rgb(131, 132, 138);
+  cursor: pointer;
+  color: white;
+  font-size: 4vw;
+  text-decoration: none;
+  padding:.1em .5em;
+  border-radius: .25em;
+  position:relative;
+  isolation: isolate;
+  background-color: none;
+}
+.a-home-video::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  inset:0;
+  scale:0 1;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+.a-home-video:hover::after,
+.a-home-video:focus-visible:after {
+  transform-origin: left;
+  scale:1 1;
+}
+/*  */
+/*  */
+/* Default styles */
+.video-home-page-2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.shop-room {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  justify-content: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .second-section {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+  }
+
+  .video-home-page-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .shop-room {
+    width: 100%; 
+    padding-left: 50px; 
+    padding-top: 30px; 
+  }
+ 
+}
+
+
+.p1{
+ font-size: 39px;
+ margin-top: 90px;
+}
+a{
+  font-size: 28px;
+  line-height: 2.5;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.658);
+  pointer-events:painted;
+}
+
+/*  */
+/*  */
+.third-section{
+  background-color:rgba(168, 164, 164, 0.534);
+}
+.third-h1{
+  color: white;
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 50px;
+  font-weight: 400;
+  color:rgb(98, 98, 98);
+  font-family: proxima_nova_light, -apple-system, BlinkMacSystem;
+}
+.third-p{
+  font-size: 20px;
+  padding: 0 20px;
+  font-weight: 400;
+  color:rgb(98, 98, 98);
+  font-family: proxima_nova_light, -apple-system, BlinkMacSystem;
+
+}
+.third-section-into{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+.third-section-into-image{
+  margin-bottom: 100px;
+}
+
+.third-a{
+  font-size: 23px;
+  font-weight: 400;
+  color:rgb(63, 62, 62);
+  font-family: proxima_nova_light, -apple-system, BlinkMacSystem;
+}
+.third-a-p{
+  font-size: 19px;
+  font-weight: 400;
+  color:rgb(0, 0, 0);
+  font-family: proxima_nova_light, -apple-system, BlinkMacSystem;
+}
+.third-a-a{
+  font-size: 20px;
+  font-weight: 700;
+  color:rgb(219, 119, 4);
+  letter-spacing:1.5px;
+  font-family: proxima_nova_light, -apple-system, BlinkMacSystem;
+}
+
+@media screen and (max-width: 800px){
+  .third-section-into{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:.5 rem;
+    padding: 0 8px;
+  }
+  .third-section-into-image{
+    margin-bottom: 10px;
+  }
+  .third-a-p{
+    font-size: 18px;
+  }
+  .third-a-a{
+    font-size: 18px;
+  }
+  .third-h1{
+    text-align: center;
+    font-size: 5vw;
+    padding-left: 8px;
+    padding-top: 12px;
+  }
+  .third-p,
+  .third-a{
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 0 20px;
+  }
+  
+}
+/*  */
+/*  */
+.fourth-into{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding:10px 20px;
+}
+.four-h1{
+  padding-left:20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 400;
+  color:rgba(0, 0, 0, 0.712);
+  font-family:proxima_nova_light, -apple-system, BlinkMacSystem;
+  letter-spacing: 2px;
+}
+.fourth-text{
+  line-height: 2.5;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 800px){
+  .fourth-into{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding:2px 8px;
+  }
+  .four-h1{
+    font-size: 5vw;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .fourth-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+.fifth-section{
+  display: grid;
+  grid-template-columns: 1fr 35rem ;
+}
+.fifth-text{
+  background-color: rgba(245, 245, 245, 0.973);
+}
+
+.fifth-h2{
+  font-size: 39 px;
+  font-weight: 700;
+  margin: 10px 60px 20px 40px;
+}
+.fifth-p{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 10px 20px 40px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+input{
+  height: 30px;
+  width:250px;
+  padding-left:20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+  border:2px solid black;
+}
+input::placeholder{
+  font-size: 15px;
+  font-weight: 400;
+  padding:10px 20px;
+}
+.submit{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  vertical-align: middle;
+  border:2px solid rgb(2, 89, 250);
+  font:600 26px ;
+  color:rgb(2, 89, 250) ;
+  border-radius: 20px;
+  transition: 1s;
+}
+.submit:hover{
+  border:2px solid rgb(2, 89, 250);
+  font:600 26px ;
+  background-color: rgb(2, 89, 250) ;
+  color:white;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.fifth-class{
+  height: 100px;
+}
+@media screen and (max-width: 800px){
+  .fifth-section{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  .fifth-h2{
+    text-align: center;
+    font-size:5vw;
+    margin: 10px 60px 20px 40px;
+  }
+  .fifth-p{
+    font-size: 3vw;
+    text-align: center;
+    margin: 10px 10px 20px 40px;
+  }
+
+}
+/*  */
+/*  */
+.sixth-section{
+  background-color: rgba(245, 245, 245, 0.973);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sixth-icons{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 40px;
+}
+
+.logo-sixth{
+  width:200px;
+  margin-top:100px;
+  margin-bottom: 50px;
+}
+.sixth-h1{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 30px;
+
+}
+footer{
+ padding: 60px;
+  background-color: black;
+  color:white; 
+   text-align: center;
+
+}
+.footer.p{
+ width: 300px;
+  font:600 24px/3 proxima_nova_light, -apple-system, BlinkMacSystem;
+}
+.footer h4{
+  color:rgb(228, 219, 219);
+}
